@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACS CUPPS Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#dashboard"><img class="side-nav" src="./images/dashboard.png"></a></li>
+            <li><a href="#devices"><img class="side-nav" src="./images/printer.png"></a></li>
+            <li><a href="#reports"><img class="side-nav" src="./images/graph.png"></a></li>
+            <li><a href="#users"><img class="side-nav" src="./images/users.png"></a></li>
+            <li><a href="#settings"><img class="side-nav" src="./images/settings.png"></a></li>
+        </ul>
+    </nav>
+
+
+
+    <div id="dashboard">
+
+
+
+        <header class="greeting-bubble">
+            <div class="last-visit-1">
+                <h1>Hi, Jacob!</h1>
+                <p>Welcome back!</p>
+                <p>Since your last visit...</p>
+            </div>
+            <div class="last-visit-2">
+                <div><h4>Tickets | </h4><h4 id="ticket-counter"></h4></div>
+                <div><h4>Devices Down | </h4><h4 id="devices-down"></h4></div>
+                <div><h4>Flights | </h4><h4 id="flights"></h4></div>
+            </div>
+        </header>
+
+
+
+        <div class="device-status-box">
+            <h3>Devices</h3>
+            <button>></button>
+
+            <div class="status-box" id="green">
+                <h4>Green - Online</h4>
+                <p>1000</p>
+                <p> | </p>
+                <p>100%</p>
+            </div>
+
+            <div class="status-box" id="red">
+                <h4>Offline - Offline</h4>
+                <p>30</p>
+                <p> | </p>
+                <p>10%</p>
+            </div>
+
+            <div class="status-box" id="yellow">
+                <h4>Yellow - Media</h4>
+                <p>400</p>
+                <p> | </p>
+                <p>400%</p>
+            </div>
+
+            <div class="status-box" id="blue">
+                <h4>Blue - Unknown</h4>
+                <p>203</p>
+                <p> | </p>
+                <p>21%</p>
+            </div>
+        </div>
+
+
+
+        <div>
+            <div>
+                <h3>Devices</h3>
+                <p>Green - Online</p>
+                <div>
+                    <p>1000</p>
+                    <p> | </p>
+                    <p>100%</p>
+                </div>
+                <p>Red - Online</p>
+                <div>
+                    <p>1000</p>
+                    <p> | </p>
+                    <p>100%</p>
+                </div>
+                <p>Yellow - Media</p>
+                <div>
+                    <p>1000</p>
+                    <p> | </p>
+                    <p>100%</p>
+                </div>
+                <p>Blue - Unknown</p>
+                <div>
+                    <p>1000</p>
+                    <p> | </p>
+                    <p>100%</p>
+                </div>
+            </div>
+            <div>
+                <chart></chart>
+            </div>
+        </div>
+
+
+
+        <div class="members-box">
+            <h3>Members</h3>
+            <button>></button>
+            <div class="member-1">
+                <img src="" alt="Profile picture">
+                <p>Name1</p>
+            </div>
+            <div class="member-2">
+                <img src="" alt="Profile picture">
+                <p>Name2</p>
+            </div>
+            <div class="member-3">
+                <img src="" alt="Profile picture">
+                <p>Name3</p>
+            </div>
+            <div class="member-4">
+                <img src="" alt="Profile picture">
+                <p>Name4</p>
+            </div>
+            <div class="member-5">
+                <img src="" alt="Profile picture">
+                <p>Name5</p>
+            </div>
+        </div>
+
+
+
+        <div class="devices-offline-graph">
+            <h3>Devices Offline</h3>
+            <div>
+                <select>
+                    <option value="hour">Hour</option>
+                    <option value="day">Day</option>
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                    <option value="all-time">All Time</option>
+                </select>
+                <button>></button>
+            </div>
+            <graph></graph>
+        </div>
+
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
