@@ -25,132 +25,149 @@
     <div id="dashboard">
 
 
+        <div class="vertical-1">
+            <header class="greeting-bubble">
+                <div class="last-visit-1">
+                    <h1>Hi, Jacob!</h1>
+                    <p id="welcome">Welcome back!</p>
+                    <p>Since your last visit...</p>
+                </div>
+                <div class="last-visit-2">
+                    <div><h4 class="tickets greeting-update">Tickets | </h4><h4 class="tickets greeting-update" id="ticket-counter"> 3</h4></div>
+                    <div><h4 class="devices greeting-update">Devices Down | </h4><h4 class="devices greeting-update" id="devices-down"> 3</h4></div>
+                    <div><h4 class="flights greeting-update">Flights | </h4><h4 class="flights greeting-update" id="flight-counter"> 48</h4></div>
+                </div>
+            </header>
 
-        <header class="greeting-bubble">
-            <div class="last-visit-1">
-                <h1>Hi, Jacob!</h1>
-                <p>Welcome back!</p>
-                <p>Since your last visit...</p>
-            </div>
-            <div class="last-visit-2">
-                <div><h4>Tickets | </h4><h4 id="ticket-counter"></h4></div>
-                <div><h4>Devices Down | </h4><h4 id="devices-down"></h4></div>
-                <div><h4>Flights | </h4><h4 id="flights"></h4></div>
-            </div>
-        </header>
 
 
+            <div class="device-chart-box">
+                <div class="top-material">
+                    <h3>Devices</h3>
+                    <button>></button>
+                </div>
 
-        <div class="device-status-box">
-            <h3>Devices</h3>
-            <button>></button>
+                <div class="bottom-material">
+                    <div class="legend">
+                        <div class="status-box" id="green">
+                            <h4>Green - Online</h4>
+                            <p>1000</p>
+                            <p> | </p>
+                            <p>100%</p>
+                        </div>
+            
+                        <div class="status-box" id="red">
+                            <h4>Offline - Offline</h4>
+                            <p>30</p>
+                            <p> | </p>
+                            <p>10%</p>
+                        </div>
+            
+                        <div class="status-box" id="yellow">
+                            <h4>Yellow - Media</h4>
+                            <p>400</p>
+                            <p> | </p>
+                            <p>40%</p>
+                        </div>
+            
+                        <div class="status-box" id="blue">
+                            <h4>Blue - Unknown</h4>
+                            <p>203</p>
+                            <p> | </p>
+                            <p>21%</p>
+                        </div>
+                    </div>
 
-            <div class="status-box" id="green">
-                <h4>Green - Online</h4>
-                <p>1000</p>
-                <p> | </p>
-                <p>100%</p>
-            </div>
-
-            <div class="status-box" id="red">
-                <h4>Offline - Offline</h4>
-                <p>30</p>
-                <p> | </p>
-                <p>10%</p>
-            </div>
-
-            <div class="status-box" id="yellow">
-                <h4>Yellow - Media</h4>
-                <p>400</p>
-                <p> | </p>
-                <p>400%</p>
-            </div>
-
-            <div class="status-box" id="blue">
-                <h4>Blue - Unknown</h4>
-                <p>203</p>
-                <p> | </p>
-                <p>21%</p>
+                    <div class="chart-space">
+                        <img src="./images/example_chart.png">
+                        <chart></chart>
+                    </div>
+                </div>
             </div>
         </div>
 
 
 
-        <div>
+
+
+
+        <div class="vertical-2">
             <div>
-                <h3>Devices</h3>
-                <p>Green - Online</p>
                 <div>
-                    <p>1000</p>
-                    <p> | </p>
-                    <p>100%</p>
+                    <h3>Devices</h3>
+                    <p>Green - Online</p>
+                    <div>
+                        <p>1000</p>
+                        <p> | </p>
+                        <p>100%</p>
+                    </div>
+                    <p>Red - Online</p>
+                    <div>
+                        <p>1000</p>
+                        <p> | </p>
+                        <p>100%</p>
+                    </div>
+                    <p>Yellow - Media</p>
+                    <div>
+                        <p>1000</p>
+                        <p> | </p>
+                        <p>100%</p>
+                    </div>
+                    <p>Blue - Unknown</p>
+                    <div>
+                        <p>1000</p>
+                        <p> | </p>
+                        <p>100%</p>
+                    </div>
                 </div>
-                <p>Red - Online</p>
                 <div>
-                    <p>1000</p>
-                    <p> | </p>
-                    <p>100%</p>
-                </div>
-                <p>Yellow - Media</p>
-                <div>
-                    <p>1000</p>
-                    <p> | </p>
-                    <p>100%</p>
-                </div>
-                <p>Blue - Unknown</p>
-                <div>
-                    <p>1000</p>
-                    <p> | </p>
-                    <p>100%</p>
+                    <chart></chart>
                 </div>
             </div>
-            <div>
-                <chart></chart>
-            </div>
-        </div>
 
 
 
-        <div class="members-box">
-            <h3>Members</h3>
-            <button>></button>
-            <div class="member-1">
-                <img src="" alt="Profile picture">
-                <p>Name1</p>
-            </div>
-            <div class="member-2">
-                <img src="" alt="Profile picture">
-                <p>Name2</p>
-            </div>
-            <div class="member-3">
-                <img src="" alt="Profile picture">
-                <p>Name3</p>
-            </div>
-            <div class="member-4">
-                <img src="" alt="Profile picture">
-                <p>Name4</p>
-            </div>
-            <div class="member-5">
-                <img src="" alt="Profile picture">
-                <p>Name5</p>
-            </div>
-        </div>
-
-
-
-        <div class="devices-offline-graph">
-            <h3>Devices Offline</h3>
-            <div>
-                <select>
-                    <option value="hour">Hour</option>
-                    <option value="day">Day</option>
-                    <option value="month">Month</option>
-                    <option value="year">Year</option>
-                    <option value="all-time">All Time</option>
-                </select>
+            <div class="members-box">
+                <h3>Members</h3>
                 <button>></button>
+                <div class="member-1">
+                    <img src="" alt="Profile picture">
+                    <p>Name1</p>
+                </div>
+                <div class="member-2">
+                    <img src="" alt="Profile picture">
+                    <p>Name2</p>
+                </div>
+                <div class="member-3">
+                    <img src="" alt="Profile picture">
+                    <p>Name3</p>
+                </div>
+                <div class="member-4">
+                    <img src="" alt="Profile picture">
+                    <p>Name4</p>
+                </div>
+                <div class="member-5">
+                    <img src="" alt="Profile picture">
+                    <p>Name5</p>
+                </div>
             </div>
-            <graph></graph>
+
+
+
+            <div class="devices-offline-graph">
+                <h3>Devices Offline</h3>
+                <div>
+                    <select>
+                        <option value="hour">Hour</option>
+                        <option value="day">Day</option>
+                        <option value="month">Month</option>
+                        <option value="year">Year</option>
+                        <option value="all-time">All Time</option>
+                    </select>
+                    <button>></button>
+                </div>
+                <graph></graph>
+            </div>
         </div>
 
 
