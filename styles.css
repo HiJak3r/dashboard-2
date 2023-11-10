@@ -22,6 +22,30 @@ body {
 
 
 
+button {
+    background-color: #555; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Top and bottom padding 10px, left and right padding 20px */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Hand cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  button:hover {
+    background-color: #666; /* Slightly darker background on hover */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow effect on hover */
+  }
+  
+  button:active {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Smaller shadow effect when button is clicked */
+  }
+
+
+
+
+
 .greeting-bubble {
     display: flex;
     background-color: #303131; /* Dark grey background */
@@ -32,10 +56,10 @@ body {
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Spacing inside the bubble */
     color: #ffffff; /* White text */
-    max-width: 65%; /* Maximum width of the bubble */
-    max-height: 40%;
-    width: 900px;
-    height: 200px;
+    min-width: 900px; /* Maximum width of the bubble */
+    min-height: 200px;
+    width: 65%;
+    height: 40%;
     margin: 20px; /* Margin around the bubble */
     font-family: 'Arial', sans-serif; /* Font styling */
 
@@ -64,7 +88,7 @@ body {
 }
 
 .last-visit-2 {
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 .greeting-update {
@@ -82,9 +106,10 @@ body {
     border-radius: 20px; /* Rounded corners */
     padding: 20px; /* Spacing inside the bubble */
     color: #ffffff; /* White text */
-    max-width: 65%; /* Maximum width of the bubble */
-    max-height: 60%;
-    height: 60%;
+    min-width: 900px; /* Maximum width of the bubble */
+    min-height: 450px;
+    width: 65%;
+    height: 40%;
     margin: 20px;
     margin-top: 40px; /* Margin around the bubble */
     font-family: 'Arial', sans-serif; /* Font styling */
@@ -97,7 +122,7 @@ body {
 }
 
 .top-material h3 {
-    margin-right: 740px;
+    margin-right: 86%;
 }
 
 .bottom-material {
@@ -105,7 +130,7 @@ body {
 }
 
 .legend {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 
 .status-box {
@@ -114,6 +139,12 @@ body {
 
 .status-box p {
     display: inline-block;
+}
+
+.chart-space img {
+    object-position: 90px 0px;
+    width: 450px;
+    height: auto;
 }
 
 
