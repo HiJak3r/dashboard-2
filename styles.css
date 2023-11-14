@@ -36,16 +36,16 @@ button {
     cursor: pointer; /* Hand cursor on hover */
     font-size: 16px; /* Font size */
     transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for hover effects */
-  }
+}
   
-  button:hover {
+button:hover {
     background-color: #666; /* Slightly darker background on hover */
     box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Shadow effect on hover */
-  }
+}
   
-  button:active {
+button:active {
     box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Smaller shadow effect when button is clicked */
-  }
+}
 
 
 
@@ -179,6 +179,95 @@ button {
     top: 7%; /* Align to the top */
     overflow-y: auto; /* Scroll if content is bigger than the screen */
 }
+
+.device-colors-boxes {
+    display: block;
+}
+
+.top-stuff {
+    display: flex;
+}
+
+.top-stuff h3 {
+    margin-right: 68%;
+}
+
+.row-1 {
+    display: flex;
+}
+
+.colorful-box {
+    width: 150px;
+    height: 80px;
+    margin: 10px;
+    padding: 15px 10px;
+    text-align: left;
+    border-radius: 20px; /* Rounded corners */
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.green-box {
+    background: linear-gradient(145deg, #4CAF50, #087f23); /* Green gradient */
+    box-shadow: 0px 0px 20px 0px rgb(0, 197, 10);
+}
+
+.red-box {
+    background: linear-gradient(145deg, #ff2222, #e61919); /* Red gradient */
+    box-shadow: 0px 0px 20px 0px rgb(255, 56, 56);
+}
+
+.yellow-box {
+    background: linear-gradient(145deg, #ffb73b, #fba22d); /* Yellow gradient */
+    box-shadow: 0px 0px 20px 0px rgb(255, 183, 0);
+}
+
+.blue-box {
+    background: linear-gradient(145deg, #2196F3, #1976D2); /* Blue gradient */
+    box-shadow: 0px 0px 20px 0px rgb(0, 187, 255);
+}
+
+.row-2 {
+    display: flex;
+}
+
+.green-box p {
+    display: inline-block;
+}
+
+#green-box-title {
+    display: block;
+}
+
+.red-box p {
+    display: inline-block;
+}
+
+#red-box-title {
+    display: block;
+}
+
+.yellow-box p {
+    display: inline-block;
+}
+
+#yellow-box-title {
+    display: block;
+}
+
+.blue-box p {
+    display: inline-block;
+}
+
+#blue-box-title {
+    display: block;
+}
+
+
+
+
 
 .user img {
     height: 60px;
